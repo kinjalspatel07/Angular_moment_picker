@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="momentApp">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Moment Picker - Basic demo</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+    <script src="https://rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-moment-picker/0.10.2/angular-moment-picker.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body ng-controller="momentAppCtrl as m" style="margin:30px;" ng-cloak>
+    
+    <div class="lead"
+         moment-picker="m.myInput">
+      
+      <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+      {{ m.myInput || "Click here to select a date" }}
+      
+    </div>
+  </body>
+</html>
